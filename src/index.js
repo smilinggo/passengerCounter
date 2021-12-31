@@ -8,9 +8,10 @@ function increment() {
 }
 
 function save() {
-    let saveVar = " " + count + " -"
-    saveEl.innerText += saveVar;
-    console.log(count);
+    let saveVar = count + " - ";
+    saveEl.textContent += saveVar;
+    count = 0;
+    countEl.textContent = count
 }
 
 
